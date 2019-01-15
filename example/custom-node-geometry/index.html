@@ -12,7 +12,7 @@
 
   <script>
     // Random tree
-    const N = 500;
+    const N = 200;
     const gData = {
       nodes: [...Array(N).keys()].map(i => ({ id: i })),
       links: [...Array(N).keys()]
@@ -37,6 +37,9 @@
             opacity: 0.75
           })
         ))
-        .graphData(gData);
+        .graphData(gData)
+        .backgroundColor('#000000')
+        .linkColor('#FFFFFF')
+        .linkWidth(1)
   </script>
 </body>
